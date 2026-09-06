@@ -139,5 +139,57 @@ public class Main {
         System.out.println("\n===== TREATMENT HISTORY =====");
 
         history.displayHistory();
+
+
+        // =========================
+        // PATIENT VISIT HISTORY - LINKED LIST
+        // =========================
+
+        PatientVisitHistory visitHistory = new PatientVisitHistory();
+
+        System.out.println("\n===== ADD PATIENT VISITS =====");
+
+        Visit v1 = new Visit(1, "2026-08-01", "Dr. Silva",
+                "Fever", "Medication");
+
+        Visit v2 = new Visit(2, "2026-08-15", "Dr. Perera",
+                "Injury", "Bandage");
+
+        Visit v3 = new Visit(3, "2026-09-01", "Dr. Fernando",
+                "Diabetes", "Blood Test");
+
+        visitHistory.addVisit(v1);
+        visitHistory.addVisit(v2);
+        visitHistory.addVisit(v3);
+
+        visitHistory.displayVisits();
+
+
+        // =========================
+        // SEARCH VISIT
+        // =========================
+
+        System.out.println("\n===== SEARCH VISIT 2 =====");
+
+        visitHistory.searchVisit(2);
+
+
+        // =========================
+        // REMOVE VISIT
+        // =========================
+
+        System.out.println("\n===== REMOVE VISIT 1 =====");
+
+        visitHistory.removeVisit(1);
+
+
+        // =========================
+        // VISIT HISTORY AFTER REMOVE
+        // =========================
+
+        System.out.println("\n===== VISIT HISTORY AFTER REMOVE =====");
+
+        visitHistory.displayVisits();
+
     }
 }
