@@ -176,5 +176,3 @@ src/
 
 This project demonstrates how different data structures can be used to manage hospital patient information efficiently. It provides practical implementation of BST, Queue, Stack, and Singly Linked List using Java.
 
-
-
